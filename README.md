@@ -1,3 +1,7 @@
+It's possible the JSON serialization in rust may sway results unfavourably towards go.
+
+
+
 ```
 Rust:
 
@@ -15,6 +19,22 @@ Concurrency:		       12.71
 Successful transactions:       32824
 Failed transactions:	          45
 Longest transaction:	       19.51
+Shortest transaction:	        0.00
+
+siege -c 50 -t5 http://localhost:1337
+
+Lifting the server siege...
+Transactions:		      163929 hits
+Availability:		       99.82 %
+Elapsed time:		      300.18 secs
+Data transferred:	        2.81 MB
+Response time:		        0.04 secs
+Transaction rate:	      546.10 trans/sec
+Throughput:		        0.01 MB/sec
+Concurrency:		       24.53
+Successful transactions:      163929
+Failed transactions:	         293
+Longest transaction:	       20.66
 Shortest transaction:	        0.00
 
 siege -c 10 -t1 http://localhost:1337
