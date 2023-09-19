@@ -1,4 +1,4 @@
-``
+```
 Rust:
 
 siege -c 50 -t1 http://localhost:1337
@@ -84,4 +84,4 @@ Failed transactions:	           7
 Longest transaction:	       19.52
 Shortest transaction:	        0.00
 
-``
+```
